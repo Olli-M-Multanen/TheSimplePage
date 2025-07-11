@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - The Simple Page</title>
+      {% else %}
+      <title>Welcome to The Simple Page</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>SimplePage: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
